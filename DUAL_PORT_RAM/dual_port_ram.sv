@@ -1,15 +1,15 @@
 module dual_port_ram_64bit #
 (
     parameter   ADDR_WIDTH = 32, 
-                BUS_WIDTH = 64
+                BUS_WIDTH  = 64
 )
 (
     input   logic clk,                          // CLOCK
 
-    input   logic [BUS_WIDTH-1:0] data_in_A,    // BUS_IN                    > port A
-    input   logic [BUS_WIDTH-1:0] data_in_B,    // BUS_IN                    > port B
-    output  logic [BUS_WIDTH-1:0] data_out_A,   // BUS_OUT                   > port A
-    output  logic [BUS_WIDTH-1:0] data_out_B,   // BUS_OUT                   > port B
+    input   logic [BUS_WIDTH-1:0] data_in_A,    // BUS_IN                     > port A
+    input   logic [BUS_WIDTH-1:0] data_in_B,    // BUS_IN                     > port B
+    output  logic [BUS_WIDTH-1:0] data_out_A,   // BUS_OUT                    > port A
+    output  logic [BUS_WIDTH-1:0] data_out_B,   // BUS_OUT                    > port B
 
     input   logic [ADDR_WIDTH-1:0] addr_A,      // ADDRESS                    > port A
     input   logic [ADDR_WIDTH-1:0] addr_B,      // ADDRESS                    > port B
@@ -34,7 +34,7 @@ module dual_port_ram_64bit #
     input   bit en                              // ASYNC_ENABLE and SYNC_WRITE_ENABLE
 );
 
-logic [BUS_WIDTH-1:0] mem[0:429496729];         // MEMORY
+    logic [BUS_WIDTH-1:0] mem[0:429496729];         // MEMORY
 
 /////////////////////////////////////////////////
 /////////// ADDRESS TRANSFER > port A ///////////
@@ -97,8 +97,7 @@ always_ff @(posedge clk) begin: mem_read_A
     else if(en && addr_valid_A) begin     	     
         data_out_A  <= mem[addr_A];
         valid_r_A   <= 1;
-    end
-        
+    end 
 end
 /////////////////////////////////////////////////
 /////////// READ TRANSACTION > port B ///////////
