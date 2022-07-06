@@ -4,7 +4,7 @@ module dual_port_ram_64bit #
                 BUS_WIDTH = 64
 )
 (
-    input logic clk,                            // CLOCK
+    input   logic clk,                          // CLOCK
 
     input   logic [BUS_WIDTH-1:0] data_in_A,    // BUS_IN                    > port A
     input   logic [BUS_WIDTH-1:0] data_in_B,    // BUS_IN                    > port B
