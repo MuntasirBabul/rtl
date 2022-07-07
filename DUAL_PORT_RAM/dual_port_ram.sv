@@ -34,7 +34,7 @@ module dual_port_ram_64bit #
     input   bit en                              // ASYNC_ENABLE and SYNC_WRITE_ENABLE
 );
 
-    logic [BUS_WIDTH-1:0] mem[0:429496729];         // MEMORY
+    logic [BUS_WIDTH-1:0] mem[0:429496729];     // MEMORY
 
 /////////////////////////////////////////////////
 /////////// ADDRESS TRANSFER > port A ///////////
