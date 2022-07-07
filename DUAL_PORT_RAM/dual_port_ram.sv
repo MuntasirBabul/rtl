@@ -14,20 +14,20 @@ module dual_port_ram_64bit #
     input   logic [ADDR_WIDTH-1:0] addr_A,      // ADDRESS                    > port A
     input   logic [ADDR_WIDTH-1:0] addr_B,      // ADDRESS                    > port B
 
-    input   bit ready_r_A,                      // READY/READ                 > port A    
-    output  bit valid_r_A,                      // VALID/READ                 > port A
-    output  bit ready_w_A,                      // READY/WRITE                > port A
-    input   bit valid_w_A,                      // VALID/WRITE                > port A
+    input   bit ready_r_A,                      // READY::READ                > port A    
+    output  bit valid_r_A,                      // VALID::READ                > port A
+    output  bit ready_w_A,                      // READY::WRITE               > port A
+    input   bit valid_w_A,                      // VALID::WRITE               > port A
 
-    input   bit ready_r_B,                      // READY/READ                 > port B    
-    output  bit valid_r_B,                      // VALID/READ                 > port B
-    output  bit ready_w_B,                      // READY/WRITE                > port B
-    input   bit valid_w_B,                      // VALID/WRITE                > port B
+    input   bit ready_r_B,                      // READY::READ                > port B    
+    output  bit valid_r_B,                      // VALID::READ                > port B
+    output  bit ready_w_B,                      // READY::WRITE               > port B
+    input   bit valid_w_B,                      // VALID::WRITE               > port B
     
-    output  bit addr_ready_A = 1,               // READY/ADDRESS              > port A
-    input   bit addr_valid_A,                   // VALID/ADDRESS              > port A
-    output  bit addr_ready_B = 1,               // READY/ADDRESS              > port B
-    input   bit addr_valid_B,                   // VALID/ADDRESS              > port B
+    output  bit addr_ready_A = 1,               // READY::ADDRESS             > port A
+    input   bit addr_valid_A,                   // VALID::ADDRESS             > port A
+    output  bit addr_ready_B = 1,               // READY::ADDRESS             > port B
+    input   bit addr_valid_B,                   // VALID::ADDRESS             > port B
 
     input   bit we_A,                           // WRITE_ENABLE               > port A
     input   bit we_B,                           // WRITE_ENABLE               > port B
