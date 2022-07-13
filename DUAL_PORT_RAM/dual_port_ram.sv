@@ -24,9 +24,9 @@ module dual_port_ram_64bit #
     output  bit ready_w_B,                      // READY::WRITE               > port B
     input   bit valid_w_B,                      // VALID::WRITE               > port B
     
-    output  bit addr_ready_A = 1,               // READY::ADDRESS             > port A
+    output  bit addr_ready_A,                   // READY::ADDRESS             > port A
     input   bit addr_valid_A,                   // VALID::ADDRESS             > port A
-    output  bit addr_ready_B = 1,               // READY::ADDRESS             > port B
+    output  bit addr_ready_B,                   // READY::ADDRESS             > port B
     input   bit addr_valid_B,                   // VALID::ADDRESS             > port B
 
     input   bit we_A,                           // WRITE_ENABLE               > port A
