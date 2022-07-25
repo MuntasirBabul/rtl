@@ -7,7 +7,7 @@ interface ram_if #
                 BUS_WIDTH  = 64
 )
 (
-    input logic clk, aresetn	
+    input logic aclk, aresetn	
 );
 
     logic [BUS_WIDTH-1:0] data_in_A,    // BUS_IN                     > port A
@@ -39,7 +39,7 @@ interface ram_if #
 
 modport DUT
 (
-    input   logic clk,                                   
+    input   logic aclk,                                   
 
     input   logic [BUS_WIDTH-1:0] data_in_A,                                           
     input   logic [BUS_WIDTH-1:0] data_in_B,                                            
@@ -67,11 +67,10 @@ modport DUT
     input   bit we_A,                                                                 
     input   bit we_B,                                                                 
     input   bit en                                                                     
-
 );
 modport monitor
 (
-    input   logic clk,                                  
+    input   logic aclk,                                  
 
     input   logic [BUS_WIDTH-1:0] data_in_A,                                          
     input   logic [BUS_WIDTH-1:0] data_in_B,                                          
@@ -102,7 +101,7 @@ modport monitor
 );
 modport driver_0
 (
-	input   logic clk,
+	input   logic aclk,
 	output  logic [BUS_WIDTH-1:0] data_in_A,
 	input   logic [BUS_WIDTH-1:0] data_out_A,
 	output  logic [ADDR_WIDTH-1:0] addr_A,
@@ -119,7 +118,7 @@ modport driver_0
 );
 modport driver_1
 (
-    input   logic clk,
+    input   logic aclk,
     output  logic [BUS_WIDTH-1:0] data_in_B,
     input   logic [BUS_WIDTH-1:0] data_out_B,
     output  logic [ADDR_WIDTH-1:0] addr_B,
