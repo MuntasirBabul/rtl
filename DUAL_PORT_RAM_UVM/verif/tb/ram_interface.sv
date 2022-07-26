@@ -84,8 +84,8 @@ modport monitor
     input   bit valid_r_A,
     input   bit ready_w_A,
     input   bit valid_w_A,
-
-    input   bit ready_r_B,
+	
+	input   bit ready_r_B,
     input   bit valid_r_B,
     input   bit ready_w_B,
     input   bit valid_w_B,
@@ -107,12 +107,12 @@ modport driver_0
 	output  logic [ADDR_WIDTH-1:0] addr_A,
 	
 	output  bit ready_r_A,
-    input   bit valid_r_A,
-    input   bit ready_w_A,
-    output  bit valid_w_A,
+	input   bit valid_r_A,
+	input   bit ready_w_A,
+	output  bit valid_w_A,
 	
 	input   bit addr_ready_A,
-    output  bit addr_valid_A,
+	output  bit addr_valid_A,
 	output  bit we_A,
 	output  bit en
 );
