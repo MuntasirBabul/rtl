@@ -45,6 +45,7 @@ endfunction:new
     `uvm_field_int(addr_B,UVM_ALL_ON)
     `uvm_field_int(data_in_B,UVM_ALL_ON)
 `uvm_object_utils_end
+
 // Constraint //
 constraint global_
 {
