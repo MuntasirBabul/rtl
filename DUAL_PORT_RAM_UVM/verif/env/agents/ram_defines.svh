@@ -1,0 +1,4 @@
+`ifndef RAM_DEFINES
+`define RAM_DEFINES
+`define NO_OF_TRANSACTIONS 1000
+`endif
