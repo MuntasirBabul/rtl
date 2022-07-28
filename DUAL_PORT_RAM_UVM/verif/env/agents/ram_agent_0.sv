@@ -4,9 +4,9 @@
 
 class ram_agent_0 extends uvm_agent;
 
-ram_sequencer_0 seqr_0;
-ram_driver_0 drvr_0;
-ram_monitor_0 mntr_0;
+uvm_sequencer #(ram_seq_item)   seqr_0;
+ram_driver_0                    drvr_0;
+ram_monitor_0                   mntr_0;
 
 `uvm_component_utils(ram_agent_0);
 
@@ -18,7 +18,8 @@ endfunction:new
 // build_phase //
 function void build_phase(uvm_phase phase)
     super.build_phase(phase);
-    seqr_0 = ram_sequencer_0::type_id::create("seqr_0", this);
+    //seqr_0 = ram_sequencer_0::type_id::create("seqr_0", this);
+    seqr_0 = new("seqr_0", this);
     drvr_0 = ram_driver_0::type_id::create("drvr_0", this);
     mntr_0 = ram_monitor_0::type_id::create("mntr_0", this);
 endfunction:build_phase

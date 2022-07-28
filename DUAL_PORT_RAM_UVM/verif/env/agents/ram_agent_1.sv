@@ -18,7 +18,8 @@ endfunction:new
 // build_phase //
 function void build_phase(uvm_phase phase)
     super.build_phase(phase);
-    seqr_1 = ram_sequencer_1::type_id::create("seqr_1", this);
+    //seqr_1 = ram_sequencer_1::type_id::create("seqr_1", this);
+    seqr_1 = new("seqr_1", this);
     drvr_1 = ram_driver_1::type_id::create("drvr_1", this);
     mntr_1 = ram_monitor_1::type_id::create("mntr_1", this);
 endfunction:build_phase
