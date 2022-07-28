@@ -7,8 +7,6 @@ class axi_seq_item #(parameter ADDR_WIDTH = 32, BUS_WIDTH  = 64) extends uvm_seq
 
     rand bit [BUS_WIDTH-1:0] data_in_A;    
     rand bit [BUS_WIDTH-1:0] data_in_B;    
-
-
     rand bit [ADDR_WIDTH-1:0] addr_A;      
     rand bit [ADDR_WIDTH-1:0] addr_B;      
 
