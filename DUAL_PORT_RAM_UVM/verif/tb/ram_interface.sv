@@ -52,9 +52,9 @@ modport DUT
     input   bit ready_r_A,                                                                
     output  bit valid_r_A,                                                            
     output  bit ready_w_A,                                                            
-    input   bit valid_w_A,                                                            
+    input   bit valid_w_A,
 
-    input   bit ready_r_B,                                                                
+	input   bit ready_r_B,                                                                
     output  bit valid_r_B,                                                             
     output  bit ready_w_B,                                                             
     input   bit valid_w_B,                                                            
@@ -84,8 +84,8 @@ modport monitor
     input   bit valid_r_A,
     input   bit ready_w_A,
     input   bit valid_w_A,
-
-    input   bit ready_r_B,
+	
+	input   bit ready_r_B,
     input   bit valid_r_B,
     input   bit ready_w_B,
     input   bit valid_w_B,
@@ -100,19 +100,19 @@ modport monitor
     input   bit en
 );
 modport driver_0
-(
+(	
 	input   logic aclk,
 	output  logic [BUS_WIDTH-1:0] data_in_A,
 	input   logic [BUS_WIDTH-1:0] data_out_A,
 	output  logic [ADDR_WIDTH-1:0] addr_A,
 	
 	output  bit ready_r_A,
-    input   bit valid_r_A,
-    input   bit ready_w_A,
-    output  bit valid_w_A,
+	input   bit valid_r_A,
+	input   bit ready_w_A,
+	output  bit valid_w_A,
 	
 	input   bit addr_ready_A,
-    output  bit addr_valid_A,
+	output  bit addr_valid_A,
 	output  bit we_A,
 	output  bit en
 );
