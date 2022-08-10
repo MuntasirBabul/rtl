@@ -20,4 +20,39 @@ task run();
         drive.tx(); // drive the tx
     end
 endtask
+
+task drive_tx(axi_tx tx);
+    case(tx.wr_rd)
+        1: begin // WRITE_TX
+            write_address_phase();
+            write_data_phase();
+            write_response_phase();
+        end
+        2: begin // READ_TX 
+            read_address_phase();
+            read_data_phase();
+        end
+    endcase
+endtask
+
+task write_address_phase(axi_tx tx); 
+    $display("#####_____ Initiate write address phase _____#####");
+endtask
+
+task write_data_phase(axi_tx tx); 
+    $display("#####_____ Initiate write data phase _____#####");
+endtask
+
+task write_response_phase(axi_tx tx); 
+    $display("#####_____ Initiate write response phase _____#####");
+endtask
+
+task read_address_phase(axi_tx tx); 
+    $display("#####_____ Initiate read address phase _____#####");
+endtask
+
+task read_data_phase(axi_tx tx); 
+    $display("#####_____ Initiate read data phase _____#####");
+endtask
+
 endclass
