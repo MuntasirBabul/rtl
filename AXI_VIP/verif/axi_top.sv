@@ -8,6 +8,16 @@
 // what is interface? what is the need for interface in TB development
 // Sending bundle of data, dynamic(TB) to static(DUT)  > interface, for assertions, scoreboard implementations for driving and sampling signals,
 
+`include "axi_common.sv"
+`include "axi_tx.sv"
+`include "axi_interface.sv"
+`include "axi_axi_gen.sv"
+`include "axi_bfm.sv"
+`include "axi_cov.sv"
+`include "axi_mon.sv"
+`include "axi_env.sv"
+`include "axi_slave.sv"
+
 module top;
 
 reg rst, clk;
