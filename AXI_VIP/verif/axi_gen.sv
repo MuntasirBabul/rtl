@@ -15,8 +15,8 @@ task run();
     axi_common::gen2bfm.put(tx);
 
     tx = new();
-    tx.randomize();
+    tx.randomize() with {tx.wr_rd == 0};
     tx.print("axi_gen_READ");
-    axi_common::gen2bfm.put(tx.wr_rd == 0);
+    axi_common::gen2bfm.put(tx);
 endtask
 endclass
