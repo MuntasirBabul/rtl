@@ -11,7 +11,7 @@
 `include "axi_common.sv"
 `include "axi_tx.sv"
 `include "axi_interface.sv"
-`include "axi_axi_gen.sv"
+`include "axi_gen.sv"
 `include "axi_bfm.sv"
 `include "axi_cov.sv"
 `include "axi_mon.sv"
