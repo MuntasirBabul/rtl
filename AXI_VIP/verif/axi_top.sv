@@ -23,10 +23,10 @@ module top;
 reg rst, clk;
 
 axi_interface pif(clk,rst);
-
 axi_slave dut();
-axi_env env();
 axi_assertion axi_assertion_i();
+axi_env env;
+
 initial begin 
     clk = 0;
     forever #5 clk = ~clk;

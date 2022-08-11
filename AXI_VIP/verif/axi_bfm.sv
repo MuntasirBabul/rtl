@@ -24,13 +24,13 @@ endtask
 task drive_tx(axi_tx tx);
     case(tx.wr_rd)
         1: begin // WRITE_TX
-            write_address_phase();
-            write_data_phase();
-            write_response_phase();
+            write_address_phase(tx);
+            write_data_phase(tx);
+            write_response_phase(tx);
         end
         2: begin // READ_TX 
-            read_address_phase();
-            read_data_phase();
+            read_address_phase(tx);
+            read_data_phase(tx);
         end
     endcase
 endtask
