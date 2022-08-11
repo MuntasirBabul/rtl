@@ -10,12 +10,12 @@ axi_tx tx;
 task run();
     $display("#####_____ Running axi_gen _____#####");
     tx = new();
-    tx.randomize() with {tx.wr_rd == 1};
+    tx.randomize() with {tx.wr_rd == 1;};
     tx.print("axi_gen_WRITE");
     axi_common::gen2bfm.put(tx);
 
     tx = new();
-    tx.randomize() with {tx.wr_rd == 0};
+    tx.randomize() with {tx.wr_rd == 0;};
     tx.print("axi_gen_READ");
     axi_common::gen2bfm.put(tx);
 endtask
