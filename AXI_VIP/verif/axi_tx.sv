@@ -5,7 +5,7 @@
 // write method to print tx
 
 class axi_tx;
-    rand bit[31;0]  addr;
+    rand bit[31:0]  addr;
     rand bit[31:0]  dataq[$];
     rand bit[3:0]   len;
 
