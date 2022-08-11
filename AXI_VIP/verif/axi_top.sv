@@ -10,13 +10,14 @@
 
 `include "axi_common.sv"
 `include "axi_tx.sv"
+`include "axi_slave.sv"
 `include "axi_interface.sv"
 `include "axi_gen.sv"
 `include "axi_bfm.sv"
 `include "axi_cov.sv"
 `include "axi_mon.sv"
 `include "axi_env.sv"
-`include "axi_slave.sv"
+
 
 module top;
 
@@ -24,7 +25,7 @@ reg rst, clk;
 
 axi_interface pif(clk,rst);
 axi_slave dut();
-axi_assertion axi_assertion_i();
+//axi_assertion axi_assertion_i();
 axi_env env;
 
 initial begin 
@@ -43,7 +44,7 @@ end
 
 initial begin 
     #1000
-    finish();
+    $finish();
 end
 
 

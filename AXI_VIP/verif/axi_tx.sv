@@ -8,6 +8,7 @@ class axi_tx;
     rand bit[31:0]  addr;
     rand bit[31:0]  dataq[$];
     rand bit[3:0]   len;
+    rand bit        wr_rd;
 
     // we have to write a constraint on size of data
     

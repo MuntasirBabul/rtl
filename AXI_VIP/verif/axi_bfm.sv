@@ -17,7 +17,7 @@ task run();
     forever begin 
         axi_common::gen2bfm.get(tx); // get the tx from bfm
         tx.print("axi_bfm");
-        drive.tx(); // drive the tx
+        drive_tx(tx); // drive the tx
     end
 endtask
 
