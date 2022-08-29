@@ -1,6 +1,6 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1661502635" />
-    <testcase name="test_dff" classname="pytests.test_dff" file="/home/muntasir/Documents/Projects/Practice_Projects/DFF/verif/pytests/test_dff.py" lineno="9" time="0.0037794113159179688" sim_time_ns="105000.001" ratio_time="27782104.73090487" />
+    <property name="random_seed" value="1661754404" />
+    <testcase name="test_dff_cov_001" classname="pytests.test_dff_cov" file="/home/muntasir/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="621" time="0.0022602081298828125" sim_time_ns="0.001" ratio_time="0.4424371308016878" />
   </testsuite>
 </testsuites>
