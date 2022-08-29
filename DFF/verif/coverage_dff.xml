@@ -1,6 +1,6 @@
-<top abs_name="top" size="2" coverage="0" cover_percentage="0.0">
-  <d size="2" coverage="0" cover_percentage="0.0" abs_name="top.d" weight="1" at_least="1">
-    <bin0 bin="0" hits="0" abs_name="top.d.bin0" />
-    <bin1 bin="1" hits="0" abs_name="top.d.bin1" />
+<top abs_name="top" size="2" coverage="2" cover_percentage="100.0">
+  <d size="2" coverage="2" cover_percentage="100.0" abs_name="top.d" weight="1" at_least="1">
+    <bin0 bin="0" hits="6" abs_name="top.d.bin0" />
+    <bin1 bin="1" hits="4" abs_name="top.d.bin1" />
   </d>
 </top>
