@@ -1,0 +1,10 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1661762864" />
+    <testcase name="test_dff_cov_001" classname="pytests.test_dff_cov" file="/home/muntasir/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="621" time="0.002131938934326172" sim_time_ns="0.001" ratio_time="0.4690565868933125" />
+    <testcase name="test_dff_cov_002" classname="pytests.test_dff_cov" file="/home/muntasir/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="621" time="0.0028162002563476562" sim_time_ns="4.0009999999999994" ratio_time="1420.7086271588214" />
+    <testcase name="test_dff_cov_003" classname="pytests.test_dff_cov" file="/home/muntasir/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="621" time="0.0017325878143310547" sim_time_ns="6.001" ratio_time="3463.605105820834" />
+    <testcase name="test_dff_cov_004" classname="pytests.test_dff_cov" file="/home/muntasir/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="621" time="0.002073526382446289" sim_time_ns="8.001000000000001" ratio_time="3858.643935150052" />
+    <testcase name="test_dff_cov_005" classname="pytests.test_dff_cov" file="/home/muntasir/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="621" time="0.002101898193359375" sim_time_ns="10.000999999999998" ratio_time="4758.080116152449" />
+  </testsuite>
+</testsuites>
