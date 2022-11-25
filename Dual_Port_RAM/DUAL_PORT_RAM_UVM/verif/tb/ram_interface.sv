@@ -54,7 +54,7 @@ modport DUT
     output   ready_w_A,                                                            
     input    valid_w_A,
 
-	input    ready_r_B,                                                                
+    input    ready_r_B,                                                                
     output   valid_r_B,                                                             
     output   ready_w_B,                                                             
     input    valid_w_B,                                                            
@@ -85,7 +85,7 @@ modport monitor
     input    ready_w_A,
     input    valid_w_A,
 	
-	input    ready_r_B,
+    input    ready_r_B,
     input    valid_r_B,
     input    ready_w_B,
     input    valid_w_B,
@@ -101,20 +101,20 @@ modport monitor
 );
 modport driver_0
 (	
-	input    aclk,
-	output   data_in_A,
-	input    data_out_A,
-	output   addr_A,
-	
-	output   ready_r_A,
-	input    valid_r_A,
-	input    ready_w_A,
-	output   valid_w_A,
-	
-	input    addr_ready_A,
-	output   addr_valid_A,
-	output   we_A,
-	output   en
+    input    aclk,
+    output   data_in_A,
+    input    data_out_A,
+    output   addr_A,
+
+    output   ready_r_A,
+    input    valid_r_A,
+    input    ready_w_A,
+    output   valid_w_A,
+
+    input    addr_ready_A,
+    output   addr_valid_A,
+    output   we_A,
+    output   en
 );
 modport driver_1
 (
